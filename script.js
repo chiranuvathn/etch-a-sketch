@@ -1,11 +1,11 @@
-const gridDiv = document.querySelector('#grid-container');
-const squareAmt = 16 * 16; // 16 * 16 grid var for passing to loop //
+const itemGridContainer = document.querySelector('#grid-container');
+const squareAmount = 16 * 16; // total number of squares for the grid layout
 
 function drawGrid() {
-    for (let i = 0; i < squareAmt; i++) {
-        const squareDiv = document.createElement('div');
-        squareDiv.classList.add('square-div');
-        gridDiv.appendChild(squareDiv);
+    for (let i = 0; i < squareAmount; i++) {
+        const square = document.createElement('div');
+        square.classList.add('square-div');
+        itemGridContainer.appendChild(square);
     }
 }
 
