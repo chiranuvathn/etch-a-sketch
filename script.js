@@ -6,6 +6,14 @@ function drawGrid() {
         const square = document.createElement('div');
         square.classList.add('square-div');
         itemGridContainer.appendChild(square);
+    
+        square.addEventListener("mouseover", () => {
+            square.style.background = "black"
+        })
+    
+        square.addEventListener("mouseleave", () => {
+            square.style.backgroundColor = 'white';
+        })
     }
 }
 
