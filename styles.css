@@ -1,3 +1,10 @@
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
 #grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,5 +15,5 @@
     aspect-ratio: 1 / 1;
     border: 1px solid black;
     box-sizing: border-box;
-    flex-basis: calc(100% / 16);
+    flex-basis: var(--cell-width);
 }
